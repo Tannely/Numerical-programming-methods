@@ -1,5 +1,5 @@
 def f(x):
-   return 24*x**3 + 1*x**2 -2*x - 1
+   return 24*x**3 + x**2 -2*x - 1
   
 def function(a, b, e):
     while abs(b-a) > e:
@@ -11,4 +11,5 @@ def function(a, b, e):
     x = (a + b) / 2 
     print (x)
     return x
-function (0.5, 1, 0.0001)  
+function (0.5, 1, 0.0001) 
+function (-1, -0.29, 0.0001)
