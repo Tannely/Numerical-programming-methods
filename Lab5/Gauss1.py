@@ -1,7 +1,7 @@
 import numpy as np
 def gauss(a, b):
-    print('\nRevision', np.linalg.solve(a, b))
-    print('\nMethod of Jordan Gaus\n', np.linalg.inv(a) *b)
+    print('\n Revision \n', np.linalg.solve(a, b))
+    print('\n Method of Jordan Gaus \n', np.linalg.inv(a) *b)
     n = len(b)
 # Фаза виключення 
     for k in range (1,n):
@@ -14,4 +14,4 @@ def gauss(a, b):
         b[k] = (b[k] - np.dot(a[k,k+1:n], b[k+1:n]))/a[k,k]
     
     return b
-print (gauss(np.matrix([[3, -5, 3], [1, 2, 1], [2, 7, -1]]), np.matrix([[1], [4], [8]])))   
+gauss(np.matrix([[3, -5, 3], [1, 2, 1], [2, 7, -1]]), np.matrix([[1], [4], [8]]))  
