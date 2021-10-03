@@ -1,26 +1,26 @@
 import numpy as np
 # завдання 1
 print('\n Task 1 -----------------------------------')
-a = ([[1, 2], [4, -1]])
+a = np.matrix([[1, 2], [4, -1]])
 print ('A=', a)
 b = np.matrix([[2, -3], [-4, 1]])
 print ('B=', b)
-print ('Множення матриць A*B =',a*b)
-print ('Множення матриць B*A =',b*a)
-print ('Віднімання матриць: AB-BA =',a*b - b*a)
+print ('Множення матриць \n A*B =',a*b)
+print ('Множення матриць \n B*A =',b*a)
+print ('Віднімання матриць \n AB-BA =',a*b - b*a)
 
 # завдання 2
 print('\n Task 2 -----------------------------------')
 с = np.matrix([[-1 , 2], [0, 1]])
 result = np.linalg.matrix_power(с, 2)
-print('Піднесення до 2 степеня =', result)
+print('Піднесення до 2 степеня \n', result)
 
 #  завдання 3
 print('\n Task 3 -----------------------------------')
 d = np.matrix([[3, 5], [6, -1]])
 d1 = np.matrix([[2, 1], [-3, 2]])
 D = d.dot(d1)
-print('Множення матриць =', D)
+print('Множення матриць \n ', D)
 
 # завдання 4
 print('\n Task 4 -----------------------------------')
@@ -36,7 +36,7 @@ print('Визначник2 =', f1)
 print('\n Task 6 -----------------------------------')
 j = np.matrix([[1, 2, -3], [0, 1, 2], [0, 0, 1]])
 j_inv = np.linalg.inv(j)
-print('Обернена матриця =', j_inv)
+print('Обернена матриця \n ', j_inv)
 # завдання 7
 print('\n Task 7 -----------------------------------')
 i = np.matrix([[1, 2, 3, 4], [3, -1, 2, 5], [1, 2, 3, 4], [1, 3, 4, 5]])
@@ -58,7 +58,7 @@ if x8 != 0:
     y = round((b2/ x8),3)
     z = round((z2/ x8),3)
 print("x =" ,x,"y =", y,"z =", z)
-print("Revision = ")
+print("Revision")
 print(np.linalg.solve(matrix, matrixv1))
 
 # завдання 9
@@ -69,7 +69,7 @@ n1 = np.matrix([[-2], [-1], [0]])
 j6 =  np.linalg.inv(n)
 result = j6 * n1
 print(result)
-print("revision = ")
+print("Revision")
 print(np.linalg.solve(n, n1))
 
 
