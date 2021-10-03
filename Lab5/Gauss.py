@@ -16,6 +16,3 @@ A = np.linalg.solve(a, a1)
 print(A) 
 
 """
-
-
-
