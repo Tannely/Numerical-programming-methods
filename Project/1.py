@@ -3,7 +3,7 @@ import numpy as np
 N = 4
 M = 5
 A = [[0] * M for i in range (N)]
-print('Матриця заповнена випадковими числами в діапазоні від 3 до 23') 
+print('Матриця розмірністю 4x5 заповнена випадковими числами в діапазоні від 3 до 23') 
 for i in range (N):
     for j in range (M):
         A[i][j] = randint(3, 23)
