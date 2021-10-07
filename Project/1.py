@@ -9,11 +9,17 @@ for i in range (N):
         A[i][j] = randint(3, 23)
         print(A[i][j], end = ' ')   
     print()
+# sum
+print('\n-------------------------Sum-------------------------')   
 sum = 0
 for i in range (N):
     for j in range (M):
         sum += A[i][j]
 print('\nСума елементів матриці =',sum)
+
+# min, max, indices
+print()
+print('\n-------------------------Min, Max, Indices-------------------------')
 min = A[0][0]
 min_i = 0
 min_j = 0
@@ -35,4 +41,4 @@ for i in range (N):
 print('\nМінімальний елемент матриці = ', min)
 print('Індекс мінімального значення = [{}, {}]'.format(min_i, min_j))
 print('\nМаксимальний елемент матриці = ', max)
-print('Індекс максимального значення значення = [{}, {}]'.format(max_i, max_j))
+print('Індекс максимального значення = [{}, {}]'.format(max_i, max_j))
