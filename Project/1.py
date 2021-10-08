@@ -16,6 +16,20 @@ for i in range (N):
     for j in range (M):
         sum += A[i][j]
 print('\nСума елементів матриці =',sum)
+sum1 = 0
+for i in range(N):
+     sum1 += A[i][i]
+print('\nСума головної діагоналі матриці =',sum1)      
+sum2 = 0
+for i in range(0, N):
+    for j in range(i+1, M):
+        sum2 += A[i][j]
+print('\nСума елементів над головною діагоналлю матриці =',sum2)
+sum3 = 0
+for i in range(1, N):
+    for j in range(i):
+        sum3 += A[i][j]
+print('\nСума елементів під головною діагоналлю матриці =',sum3)
 
 # min, max, indices
 print()
