@@ -1,5 +1,5 @@
 from random import randint
-import numpy as np
+
 N = 4
 M = 5
 A = [[0] * M for i in range (N)]
