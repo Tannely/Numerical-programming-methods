@@ -47,7 +47,7 @@ def F(x):
 xs = np.array(linspace(0, 1))
 f = vectorize(F)
 plt.plot(x, y, "ro", xs, f(xs))
-plt.axis([0, 1, 0, 1])
+plt.axis([0, 1, -1, 1])
 plt.scatter(x, y)
 plt.xlabel("x")
 plt.ylabel("y")
